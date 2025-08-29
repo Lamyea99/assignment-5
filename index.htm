@@ -39,8 +39,8 @@
   <main class="bg-[#43ff641a] py-[45px]">
 <section class="grid grid-cols-12 gap-[7px] max-w-[1750px] mx-auto">
   <section class="col-span-9 max-w-[1300px]">
-<div class="grid grid-cols-3 gap-[25px]">
-  <div class="h-[270px] w-[390px] p-4 bg-white">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-[25px]">
+  <div class="h-[270px] max-w-[390px] p-4 bg-white">
     <div class="flex justify-between items-center">
       <img src="./assets/emergency.png" alt="" class="w-[50px] h-[50px] bg-[#FFE3E2] p-2 rounded-xl">
     <span><i class="fa-solid fa-heart"></i></span></div>
@@ -55,7 +55,7 @@
   <button class="btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
-  <div class="h-[270px] w-[390px] p-4 bg-white">
+  <div class="h-[270px] max-w-[390px] p-4 bg-white">
     <div class="flex justify-between items-center">
       <img src="./assets/police.png" alt="" class="w-[50px] h-[50px] bg-[#FFE3E2] p-2 rounded-xl">
     <span><i class="fa-solid fa-heart"></i></span></div>
@@ -70,7 +70,7 @@
   <button class="btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
-  <div class="h-[270px] w-[390px] p-4 bg-white">
+  <div class="h-[270px] max-w-[390px] p-4 bg-white">
     <div class="flex justify-between items-center">
       <img src="./assets/fire-service.png" alt="" class="w-[50px] h-[50px] bg-[#FFE3E2] p-2 rounded-xl">
     <span><i class="fa-solid fa-heart"></i></span></div>
@@ -85,7 +85,7 @@
   <button class="btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
-  <div class="h-[270px] w-[390px] p-4 bg-white">
+  <div class="h-[270px] max-w-[390px] p-4 bg-white">
     <div class="flex justify-between items-center">
       <img src="./assets/ambulance.png" alt="" class="w-[50px] h-[50px] bg-[#FFE3E2] p-2 rounded-xl">
     <span><i class="fa-solid fa-heart"></i></span></div>
@@ -100,7 +100,7 @@
   <button class="btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
-  <div class="h-[270px] w-[390px] p-4 bg-white">
+  <div class="h-[270px] max-w-[390px] p-4 bg-white">
     <div class="flex justify-between items-center">
       <img src="./assets/emergency.png" alt="" class="w-[50px] h-[50px] bg-[#FFE3E2] p-2 rounded-xl">
     <span><i class="fa-solid fa-heart"></i></span></div>
@@ -115,7 +115,7 @@
   <button class="btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
-  <div class="h-[270px] w-[390px] p-4 bg-white">
+  <div class="h-[270px] max-w-[390px] p-4 bg-white">
     <div class="flex justify-between items-center">
       <img src="./assets/emergency.png" alt="" class="w-[50px] h-[50px] bg-[#FFE3E2] p-2 rounded-xl">
     <span><i class="fa-solid fa-heart"></i></span></div>
@@ -130,7 +130,7 @@
   <button class="btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
-  <div class="h-[270px] w-[390px] p-4 bg-white">
+  <div class="h-[270px] max-w-[390px] p-4 bg-white">
     <div class="flex justify-between items-center">
       <img src="./assets/emergency.png" alt="" class="w-[50px] h-[50px] bg-[#FFE3E2] p-2 rounded-xl">
     <span><i class="fa-solid fa-heart"></i></span></div>
@@ -145,7 +145,7 @@
   <button class="btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
-  <div class="h-[270px] w-[390px] p-4 bg-white">
+  <div class="h-[270px] max-w-[390px] p-4 bg-white">
     <div class="flex justify-between items-center">
       <img src="./assets/emergency.png" alt="" class="w-[50px] h-[50px] bg-[#FFE3E2] p-2 rounded-xl">
     <span><i class="fa-solid fa-heart"></i></span></div>
@@ -160,7 +160,7 @@
   <button class="btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
-  <div class="h-[270px] w-[390px] p-4 bg-white">
+  <div class="h-[270px] max-w-[390px] p-4 bg-white">
     <div class="flex justify-between items-center">
       <img src="./assets/emergency.png" alt="" class="w-[50px] h-[50px] bg-[#FFE3E2] p-2 rounded-xl">
     <span><i class="fa-solid fa-heart"></i></span></div>
@@ -178,8 +178,13 @@
   
 </div>
   </section>
-  <aside class="col-span-3">
-<h1> Call History</h1>
+  <aside class="col-span-3 bg-white h-full">
+   <div class="flex flex-col md:flex-row justify-between items-center p-3"> 
+    <div class="flex items-center gap-1">
+    <i class="fa-regular fa-clock"></i>
+<h1 class="font-semibold"> Call History</h1></div>
+<button class="h-[40px] w-[60px] bg-[#00a63f] rounded-2xl p-2 text-white">Clear</button>
+   </div>
   </aside>
 </section>
 
