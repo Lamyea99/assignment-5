@@ -8,20 +8,26 @@
     document.getElementById("heart-number").innerText = heartIcon;}
   )
   }
-  //call numbers
- // const callNumbers =document.getElementsByClassName("call-numbers");
-  //for(let callNumber of callNumbers){
-    //callNumber.addEventListener("click",function(){
-    //const  callPoints =document.getElementById("call-points").innerText;
-    //if(callPoints <= 20){
-      //  alert("do not");
-        //return;
-    //}
-    //const remainingPoints = Number(callPoints) - 20 ;
-    //document.getElementById("call-points").innerText = remainingPoints;
+//copy
+const copying = document.getElementsByClassName("copy");
+for(let copied of copying){
+copied.addEventListener("click",function(){
+    alert("copied");
+    const copyNumber = document.getElementById("copy-points").innerText;
+    const copiedNumber = Number(copyNumber) + 1;
+    document.getElementById("copy-points").innerText = copiedNumber;
 
-    //})
- //}
+})
+
+}
+
+
+
+
+
+
+  //call numbers
+ 
 
  const hotlines = document.getElementsByClassName("emergency-hotline");
  for(const hotline of hotlines){
@@ -42,7 +48,7 @@
       let now = new Date();
      now.toLocaleTimeString();
        const newCart = document.createElement("div");
-       newCart.innerHTML =`<div class="bg-[#FAFAFA] rounded-xl p-3 flex justify-between items-center my-3">
+       newCart.innerHTML =`<div class="bg-[#FAFAFA] rounded-xl p-3 flex flex-col sm:flex-row justify-between items-center my-3">
   <div>
     <h1 class="text-[18px] text-black font-semibold">${service}</h1>
     <h3 class="text-gray-500">${serviceNumber}</h3>
@@ -54,8 +60,10 @@
    }
  })
 }
-
+//remove history
 document.getElementById("clear-button").addEventListener("click",function(){
  const removeContainer = document.getElementById("remove");
   removeContainer.innerHTML = " ";
 })
+
+

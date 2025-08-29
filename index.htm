@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-  <div class="flex flex-col md:flex-row justify-between items-center max-w-[1800px]  mx-auto">
+  <div class="flex flex-col sm:flex-row justify-between items-center max-w-[1800px]  mx-auto">
     <div class="flex items-center gap-2">
      <img src="./assets/logo.png" alt="" class="h-[50px] w-[50px]">
      <h1 class="text-[#006747] font-bold text-3xl">Emergency <br>Service</h1>
@@ -24,8 +24,8 @@
         <h3 id="call-points" class="text-xl font-bold">100</h3>
         <img src="./assets/coin.png" alt="" class="h-[30px] w-[30px]">
      </div>
-     <div class="flex items-center justify-center gap-[15px] my-auto h-[52px] min-w-[90px] md:w-[130px] bg-[#00a63f] rounded-4xl">
-        <h3 class="text- text-white"><span>2</span> Copy </h3>
+     <div class="flex items-center justify-center gap-[15px] my-auto h-[52px] min-w-[90px] sm:w-[130px] bg-[#00a63f] rounded-4xl">
+        <h3 class="text- text-white"><span id="copy-points">0</span> Copy </h3>
      </div>
 
     </div>
@@ -39,7 +39,7 @@
   <main class="bg-[#43ff641a] py-[45px]">
 <section class="grid grid-cols-12 gap-[7px] max-w-[1750px] mx-auto">
   <section class="col-span-9 max-w-[1300px]">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-[25px]">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-[25px]">
   <div class="emergency-hotline h-[270px] max-w-[390px] p-4 bg-white rounded-xl shadow-md">
     <div class="flex justify-between items-center">
       <img src="./assets/emergency.png" alt="" class="w-[50px] h-[50px] bg-[#FFE3E2] p-2 rounded-xl">
@@ -51,7 +51,7 @@
   <button class="btn h-[30px] w-[60px] rounded-xl p-1 bg-gray-300">All</button>
   <br>
   <div class="flex gap-1 mt-2">
-  <button class="btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
+  <button class="copy btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
   <button class="call-numbers btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
@@ -66,7 +66,7 @@
   <button class="btn h-[30px] w-[60px] rounded-xl p-1 bg-gray-300">Police</button>
   <br>
   <div class="flex gap-1 mt-2">
-  <button class="btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
+  <button class="copy btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
   <button class="call-numbers btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
@@ -81,7 +81,7 @@
   <button class="btn h-[30px] w-[60px] rounded-xl p-1 bg-gray-300">Fire</button>
   <br>
   <div class="flex gap-1 mt-2">
-  <button class="btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
+  <button class="copy btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
   <button class="call-numbers btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
@@ -96,7 +96,7 @@
   <button class="btn h-[30px] w-[60px] rounded-xl p-1 bg-gray-300">Health</button>
   <br>
   <div class="flex gap-1 mt-2">
-  <button class="btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
+  <button class="copy btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
   <button class="call-numbers btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
@@ -111,7 +111,7 @@
   <button class="btn h-[30px] w-[60px] rounded-xl p-1 bg-gray-300">Help</button>
   <br>
   <div class="flex gap-1 mt-2">
-  <button class="btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
+  <button class="copy btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
   <button class="call-numbers btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
@@ -126,7 +126,7 @@
   <button class="btn h-[30px] w-[60px] rounded-xl p-1 bg-gray-300">Govt.</button>
   <br>
   <div class="flex gap-1 mt-2">
-  <button class="btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
+  <button class="copy btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
   <button class="call-numbers btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
@@ -141,7 +141,7 @@
   <button class="btn h-[30px] w-[60px] rounded-xl p-1 bg-gray-300">Electricity</button>
   <br>
   <div class="flex gap-1 mt-2">
-  <button class="btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
+  <button class="copy btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
   <button class="call-numbers btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
@@ -156,7 +156,7 @@
   <button class="btn h-[30px] w-[60px] rounded-xl p-1 bg-gray-300">NGO</button>
   <br>
   <div class="flex gap-1 mt-2">
-  <button class="btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
+  <button class="copy btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
   <button class="call-numbers btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
@@ -171,15 +171,15 @@
   <button class="btn h-[30px] w-[60px] rounded-xl p-1 bg-gray-300">Travel</button>
   <br>
   <div class="flex gap-1 mt-2">
-  <button class="btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
+  <button class="copy btn w-[50%]"><i class="fa-solid fa-copy"></i>Copy</button>
   <button class="call-numbers btn w-[50%] bg-[#00a63f] text-white"><i class="fa-solid fa-phone text-white"></i>Call</button>
   </div>
   </div>
   
 </div>
   </section>
-  <aside id="cart-container" class="col-span-3 bg-white h-full md:ml-5 shadow-md rounded-xl">
-   <div class="flex flex-col md:flex-row justify-between items-center p-3"> 
+  <aside id="cart-container" class="col-span-3 bg-white h-full sm:ml-5 shadow-md rounded-xl">
+   <div class="flex flex-col sm:flex-row justify-between items-center p-3"> 
     <div class="flex items-center gap-1">
     <i class="fa-regular fa-clock"></i>
 <h1 id="lamyea" class="font-semibold"> Call History</h1></div>

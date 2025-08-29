@@ -111,12 +111,18 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 ### 6. Answer the following questions clearly:
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+1.ans:getElementById-returns one element that was given id.
+getElementByClassName-returns all element that was given class.acts like array like object
+querySelectorALL-returns a nodelist of all elements matching a css class
 2. How do you **create and insert a new element into the DOM**?
+2.ans:in javascript,new element can be created by createElement(), insert by appendChild().
 3. What is **Event Bubbling** and how does it work?
+3.ans:event bubbling is a way events propagate in the dom.when a event happens on an element,it first runs the event handler on that element,then moves upward through its parents.
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+4.ans:
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
-
----
+5.ans:preventDefault-stops the dafault actions of an element
+stopPropagation-stops the event from bubbling up to thr dom.
 
 ## 🧪 Challenges Part (10 Marks)
 
